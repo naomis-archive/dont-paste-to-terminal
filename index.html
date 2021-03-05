@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Don't Do it!</title>
+  </head>
+  <body>
+    <h1>Don't Paste Text Into Your Terminal!</h1>
+    <p>
+      Here's a brief demonstration of why you should not copy things like
+      terminal commands from a website and paste them into your terminal.
+    </p>
+    <p>Go ahead and copy this console command.</p>
+    <p><code>console.log("I'm completely safe!");</code></p>
+    <p>Now paste it below:</p>
+    <textarea></textarea>
+    <details>
+      <summary>Oh no! Here's what happened:</summary>
+      <p>
+        This little bit of JavaScript code detected your copy command and
+        replaced your clipboard contents with my own code. While it was safe
+        THIS time, the code you pasted could have been malicious.
+      </p>
+      <pre>
+              <code>
+document.addEventListener("copy", (event) => {
+    event.clipboardData.setData(
+      "text/plain",
+      `Hmmm this isn't right.`
+    );
+    event.preventDefault();
+  });
+              </code>
+          </pre>
+      <p>
+        It's harmless here, but if you copied a command that was hijacked and
+        pasted it into your computer's terminal, all sorts of nasty things could
+        happen.
+      </p>
+      <p>
+        It's much safer to type the commands by hand. Plus you'll retain the
+        information better that way!
+      </p>
+    </details>
+  </body>
+  <script src="./index.js"></script>
+</html>
