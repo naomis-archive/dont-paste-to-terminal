@@ -4,7 +4,7 @@ A brief demonstration on the dangers of copy-pasting terminal commands.
 
 ## Live Version
 
-This page is currently deployed. [View the live website.](https://www.nhcarrigan.com/dont-paste-to-terminal)
+This page is currently deployed. [View the live website.](https://www.naomi.lgbt/dont-paste-to-terminal/)
 
 ## Feedback and Bugs
 
